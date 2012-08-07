@@ -10,6 +10,7 @@ This is a [Symphony](http://getsymphony.com/) CMS 2.3 with completed tutorials [
 	mysql -u root symphony_hello < symphony_hello.sql
 
 	# Fix permissions (_www:staff is on OS X, www-data:www-data on Ubuntu)
+	mkdir manifest/cache manifest/logs manifest/tmp
 	sudo chown _www:staff .htaccess
 	sudo chown -R _www:staff manifest
 	cd workspace
